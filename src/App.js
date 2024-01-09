@@ -17,7 +17,7 @@ function App() {
       const formData = new FormData();
       formData.append('image', selectedFile);
 
-      const response = await axios.post('http://127.0.0.1:8080/predict', formData, {
+      const response = await axios.post('https://image-classification-g5gyxv74oa-uc.a.run.app/predict', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
